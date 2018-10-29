@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<title>Larkhall Brewing Collective</title>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
+
+<style>
+
+/* CSS STYLE PRIORITY Note -you can apply  style formatting in a few places.  There is an order as to which one has priority:
+> adding !important after the line style =  [<h1 style="color: green !important;">]
+> line style [<h1 style="color: green;">]
+> id style:  #thisisanid {  background-color: silver;}
+> class formatting:     h2 {font-family: Montserrat, monospace;}*/
+
+/* CSS ways of setting colour:
+ - use the name of colour "green"
+ - use hex "#0F00F0"
+ - use RGB "rgb(255,0,255)"*/
+
+
+/* STYLE formatting */
+  body {
+    background: white;
+  }
+
+  h2 {
+    font-family: Niramit, monospace;
+  }
+
+  main {
+    font-family: Niramit, monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Niramit,monospace;
+  }
+
+/* CLASS formatting */
+  .thick-green-border {
+    border-color: #717271;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 0%;
+  }
+
+  .red-text {
+    color: #717271;
+      font-family: Niramit,monospace;
+  }
+
+    .smaller-image {
+    width: 1000px;
+  }
+
+  .silver-background {
+    background-color: #717271;
+    font-family: Niramit,monospace;
+  }
+
+/* ID formatting */
+#thisisanid {
+  background-color: silver;
+  padding: 30px 0px 30px 0px;
+  margin: 0px;
+}
+
+</style>
+
+<body>
+
+<h2 class="red-text">The Larkhall Brewing Collective </h2>
+
+<main>
+    <p> The Larkhall Brewing Collective - a new movement in beer...  Click here to go to a proper <a href="www.guardian.co.uk">newspaper</a>.</p>
+    <p> <a href="C:\Users\jimst\Desktop\LBCrootfolder\Our_ beers.html">List of our beers</a>.</p>
+
+
+
+    <a href="#"><img class="smaller-image thick-green-border" src="http://dreamicus.com/data/beer/beer-02.jpg" alt="A cute orange cat lying on its back."></a>
+
+<!-- /* HINT you can have multiple class attributes:  class = "class1 class2"... if there's a conflict then last class wins!  But id trumps both */ -->
+
+    <div class="silver-background">
+      <p>Top three ingredients:</p>
+      <ul>
+        <li>Malt</li>
+        <li>Hops</li>
+        <li>Yeast</li>
+      </ul>
+      <p>Beers brewed to date:</p>
+      <ol>
+        <li>The Yeti</li>
+        <li>Number 2</li>
+        <li>Hoppy McShitface</li>
+      </ol>
+    </div>
+
+    <form action="/submit-cat-photo" id="thisisanid">
+      <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+      <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+      <label><input type="checkbox" name="personality" checked> Loving</label>
+      <label><input type="checkbox" name="personality"> Lazy</label>
+      <label><input type="checkbox" name="personality"> Energetic</label><br>
+      <input type="text" placeholder="cat photo URL" required>
+      <button type="submit">Submit</button>
+    </form>
+
+</main>
+</body>
+
+
+</html>
